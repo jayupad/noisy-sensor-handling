@@ -1,0 +1,43 @@
+{
+    "agent": {
+        "__class__": "<class 'rl_agents.agents.robust.robust.DiscreteRobustPlannerAgent'>",
+        "budget": 500,
+        "display_tree": false,
+        "env_preprocessors": [],
+        "envs_preprocessors": [
+            [
+                {
+                    "args": 0,
+                    "method": "set_preferred_lane"
+                }
+            ],
+            [
+                {
+                    "args": 1,
+                    "method": "set_preferred_lane"
+                }
+            ]
+        ],
+        "gamma": 0.8,
+        "iterations": 75,
+        "max_depth": 7,
+        "models": [],
+        "receding_horizon": 1,
+        "step_strategy": "subtree",
+        "temperature": 30,
+        "terminal_reward": 0
+    },
+    "env": {
+        "__class__": "<class 'gymnasium.wrappers.common.OrderEnforcing'>",
+        "_action_space": "None",
+        "_cached_spec": "None",
+        "_disable_render_order_enforcing": "False",
+        "_has_reset": "True",
+        "_metadata": "None",
+        "_observation_space": "None",
+        "_saved_kwargs": "{'disable_render_order_enforcing': False}",
+        "env": "<PassiveEnvChecker<HighwayEnv<highway-v0>>>",
+        "id": "highway-v0",
+        "import_module": "highway_env"
+    }
+}
