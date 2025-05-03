@@ -16,6 +16,7 @@ jupyterlab_widgets==3.0.14
 simplejson==3.20.1
 gymnasium[other]
 docopt==0.6.2
+filterpy
 torchrl
 # xvfb
 # ffmpeg
